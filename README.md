@@ -1,6 +1,21 @@
 
 Sample Java Applicaiton V1.13
 Testing Sample Code 
-After initializing a pull request, you'll see a review page that shows a high-level overview of the changes between your branch (the compare branch) and the repository's base branch. You can add a summary of the proposed changes, review the changes made by commits, add labels, milestones, and assignees, and @mention individual contributors or teams. For more information, see "Creating a pull request."
 
-ok
+1. Open Jenkins dashboard. Click on manage jenkins
+
+2. Click on Configure system and under github configuration click advanced tab.
+
+3. Check 'Specify another hook url' for GitHub configuration. 
+
+4. Now you will get a url in the textbox. Copy this url as it is required in the next steps.
+
+5. Now open your github repository. Go to settings -> webhooks -> add webhooks.
+
+6. Now paste the url from step 4 in the payload url section. Next click on just push the event Now 
+
+you should be able to see the added webhook in the list of webhooks.
+
+7. Now go to jenkins dashboard. Go to your project configuration. In the build triggers section select 
+
+github hook trigger for git scm polling. Save the changes.
