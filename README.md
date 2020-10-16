@@ -18,6 +18,8 @@ you should be able to see the added webhook in the list of webhooks.
 
 7. Now go to jenkins dashboard. Go to your project configuration. In the build triggers section select 
 
-github hook trigger for git scm polling. Save the changes.
-TESTING
+
+https://github.com/DevopsMkt/jenkins-pipeline-tutorial/blob/master/README.md
+
+
 https://github.com/DevopsMkt/jenkins-pipeline-tutorial/blob/master/README.md
