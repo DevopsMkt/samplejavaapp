@@ -20,5 +20,4 @@ you should be able to see the added webhook in the list of webhooks.
 
 github hook trigger for git scm polling. Save the changes.
 TESTING
-github hook trigger for git scm polling. Save the changes.
-TESTING
+https://github.com/DevopsMkt/jenkins-pipeline-tutorial/blob/master/README.md
