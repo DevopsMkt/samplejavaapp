@@ -24,3 +24,5 @@ https://github.com/DevopsMkt/jenkins-pipeline-tutorial/blob/master/README.md
 
 https://github.com/DevopsMkt/jenkins-pipeline-tutorial/blob/master/README.md
 https://github.com/DevopsMkt/samplejavaapp/blob/master/README.md
+
+https://medium.com/@dileeprithvi/jenkins-ci-cd-jfrog-artifactory-jenkins-integration-341738894f86
