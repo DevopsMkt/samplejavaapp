@@ -27,3 +27,5 @@ https://github.com/DevopsMkt/samplejavaapp/blob/master/README.md
 
 https://medium.com/@dileeprithvi/jenkins-ci-cd-jfrog-artifactory-jenkins-integration-341738894f86
 https://computingforgeeks.com/how-to-install-jfrog-artifactory-on-ubuntu/
+
+admin
