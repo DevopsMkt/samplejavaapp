@@ -1,6 +1,5 @@
 
 Sample Java Applicaiton V1.13
-Testing Sample Code 
 
 1. Open Jenkins dashboard. Click on manage jenkins
 
