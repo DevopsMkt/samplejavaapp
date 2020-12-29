@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('compile') {
+    stage('Compile') {
       steps {
         git 'https://github.com/lerndevops/samplejavaapp.git'
         sh '/opt/apache-maven-3.6.3/bin/mvn compile'
@@ -9,7 +9,7 @@ pipeline {
       }
     }
 
-    stage('codereview-pmd') {
+    stage('Codereview') {
       post {
         success {
           pmd(canComputeNew: false, defaultEncoding: '', healthy: '', pattern: '**/pmd.xml', unHealthy: '')
@@ -21,7 +21,7 @@ pipeline {
       }
     }
 
-    stage('unit-test') {
+    stage('Unit-Test') {
       post {
         success {
           junit 'target/surefire-reports/*.xml'
@@ -33,7 +33,7 @@ pipeline {
       }
     }
 
-    stage('codecoverage') {
+    stage('CodeCoverage') {
       post {
         success {
           cobertura(autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: 'target/site/cobertura/coverage.xml', conditionalCoverageTargets: '70, 0, 0', failUnhealthy: false, failUnstable: false, lineCoverageTargets: '80, 0, 0', maxNumberOfBuilds: 0, methodCoverageTargets: '80, 0, 0', onlyStable: false, sourceEncoding: 'ASCII', zoomCoverageChart: false)
@@ -45,7 +45,7 @@ pipeline {
       }
     }
 
-    stage('package') {
+    stage('Package') {
       steps {
         sh '/opt/apache-maven-3.6.3/bin/mvn clean package'
       }
